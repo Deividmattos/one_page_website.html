@@ -352,3 +352,116 @@ a {
     height: 100%;
     border: 0;
 }
+
+/* =========================
+   8. CONTACT SECTION / FORM
+   ========================= */
+.contact-section {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 75px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.contact-copy > p:not(.eyebrow) {
+    max-width: 360px;
+    color: var(--text);
+}
+
+.contact-email {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.contact-email a {
+    color: var(--teal-dark);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-form {
+    padding: 30px;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #dce4e1;
+    border-radius: 5px;
+    outline: none;
+    color: var(--navy);
+    background: var(--white);
+    font: inherit;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--teal-dark);
+    box-shadow: 0 0 0 3px rgba(66, 183, 165, 0.13);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    font-family: inherit;
+}
+
+.form-note {
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* =========================
+   9. FOOTER
+   ========================= */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 25px max(28px, calc((100% - 1104px) / 2));
+    color: #c1cdd1;
+    background: var(--navy);
+    font-size: 12px;
+}
+
+.footer-logo {
+    font-size: 17px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.back-to-top {
+    color: var(--teal);
+    text-decoration: none;
+}
+
