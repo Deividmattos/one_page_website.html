@@ -465,3 +465,82 @@ a {
     text-decoration: none;
 }
 
+/* =========================
+   10. RESPONSIVE DESIGN
+   ========================= */
+@media (max-width: 760px) {
+    .navbar {
+        align-items: flex-start;
+        gap: 18px;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 42px;
+        padding-top: 60px;
+    }
+
+    .hero-visual {
+        max-width: 560px;
+    }
+
+    .about-section,
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        max-width: 560px;
+    }
+
+    .contact-section {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 65px 20px;
+    }
+
+    .hero {
+        padding: 55px 20px 70px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-visual > img {
+        height: 250px;
+    }
+
+    .floating-note {
+        right: -5px;
+        bottom: 12px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .site-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 25px 20px;
+    }
+}
